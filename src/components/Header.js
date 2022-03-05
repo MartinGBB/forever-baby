@@ -2,6 +2,7 @@ import React from 'react'
 import Input from './Input';
 import Link from './Link';
 import logo from '../images/logo-forever-liss-baby.png';
+import profileIcon from '../images/profile-icon.jpg';
 
 function Header() {
   return (
@@ -24,8 +25,9 @@ function Header() {
 
       <Link 
         link="/"
-        // image={}
+        image={ profileIcon }
         alt="logo da conta"
+        styleContent="w-11 bg-secondary-color self-center p-2 rounded-full"
       />
       <Link />
     </div>
