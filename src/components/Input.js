@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
 function Input(props) {
   const { type, name, pleaceholder, disabled } = props;
@@ -12,6 +13,13 @@ function Input(props) {
        />
     </div>
   );
+}
+
+Input.propTypes = {
+  type: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  pleaceholder: PropTypes.string.isRequired,
+  disabled: PropTypes.bool.isRequired,
 }
 
 export default Input;
