@@ -1,5 +1,6 @@
+import React from 'react'
 function Link(props) {
-  const { link, image, alt, style } = props
+  const { link, image, alt } = props;
   return (
     <div>
       <a

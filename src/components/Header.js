@@ -1,5 +1,7 @@
-import Input from "./Input";
-import Link from "./Link";
+import React from 'react'
+import Input from './Input';
+import Link from './Link';
+// import logo from '../images/logo-forever-liss-baby.png';
 
 function Header() {
   return (

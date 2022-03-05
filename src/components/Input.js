@@ -1,3 +1,5 @@
+import React from 'react'
+
 function Input(props) {
   const { type, name, pleaceholder, disabled } = props;
   return (
