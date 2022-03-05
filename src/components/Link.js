@@ -1,6 +1,6 @@
 import React from 'react'
 function Link(props) {
-  const { link, image, alt } = props;
+  const { link, image, alt, style } = props;
   return (
     <div>
       <a
@@ -9,7 +9,7 @@ function Link(props) {
         <img
           src={ image }
           alt={ alt }
-          style="width:42px;height:42px;"
+          style={ style }
         />
       </a>
     </div>
