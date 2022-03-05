@@ -5,12 +5,13 @@ import logo from '../images/logo-forever-liss-baby.png';
 
 function Header() {
   return (
-    <div>
+    <div className="flex self-center justify-between bg-primary-color">
       <Link
         link="/"
         image={ logo }
         alt="logo forever liss baby"
-        style="width:42px;height:42px;"
+        styleContent="flex desktop:w-40 phone:w-20 ml-4 mt-4"
+        styleImg="m-1"
       />
 
       <Input
@@ -18,10 +19,13 @@ function Header() {
         name="filter"
         pleaceholder="Qual o mimo de hoje para o seu anjinho?"
         disabled={ false }
+        style="p-3 self-center flex desktop:w-128 desktop:h-12 phone:w-48 h-7"
       />
-
+      <div>iten1</div>
+      <div>iten1</div>
+{/* 
       <Link />
-      <Link />
+      <Link /> */}
     </div>
   );
 }
