@@ -10,8 +10,7 @@ function Header() {
         link="/"
         image={ logo }
         alt="logo forever liss baby"
-        styleContent="flex desktop:w-40 phone:w-20 ml-4 mt-4"
-        styleImg="m-1"
+        styleContent="flex m-2 desktop:w-40 phone:w-20 ml-4 mt-4"
       />
 
       <Input
@@ -21,11 +20,14 @@ function Header() {
         disabled={ false }
         style="p-3 self-center flex desktop:w-128 desktop:h-12 phone:w-48 h-7"
       />
-      <div>iten1</div>
-      <div>iten1</div>
-{/* 
+
+
+      <Link 
+        link="/"
+        // image={}
+        alt="logo da conta"
+      />
       <Link />
-      <Link /> */}
     </div>
   );
 }
