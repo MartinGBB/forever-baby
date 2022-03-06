@@ -23,20 +23,21 @@ function Header() {
         style="p-3 self-center flex desktop:w-128 desktop:h-12 phone:w-48 h-7"
       />
 
-
+      <div className="justify-around flex m-5 w-40">
       <Link 
         link="/"
         image={ profileIcon }
         alt="perfil"
         styleContent="w-11 bg-secondary-color self-center p-2 rounded-full"
-      />
+        />
       
       <Link 
         link="/"
         image={ shoppingCart }
         alt="carrinho de compras"
         styleContent="w-11 bg-secondary-color self-center p-2 rounded-full"
-      />
+        />
+      </div>
     </div>
   );
 }
