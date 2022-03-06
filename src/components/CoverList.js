@@ -7,8 +7,10 @@ import PropTypes from 'prop-types';
 function CoverList({ covers }) {
   const settings = {
     dots: true,
+    autoplay: true,
+    autoplaySpeed: 3300,
     infinite: true,
-    speed: 500,
+    speed: 900,
     slidesToShow: 1,
     slidesToScroll: 1
   };
