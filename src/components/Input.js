@@ -1,3 +1,4 @@
+import React from 'react'
 import PropTypes from 'prop-types';
 
 function Input(props) {
@@ -9,7 +10,7 @@ function Input(props) {
       placeholder={ pleaceholder }
       disabled={ disabled }
       className={ style }
-      />
+    />
   );
 }
 

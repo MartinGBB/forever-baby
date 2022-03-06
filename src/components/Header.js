@@ -4,6 +4,7 @@ import Link from './Link';
 import logo from '../images/logo-forever-liss-baby.png';
 import profileIcon from '../images/profile-icon.jpg';
 import shoppingCart from '../images/shopping-cart.png';
+import Button from './Button';
 
 function Header() {
   return (
@@ -14,14 +15,22 @@ function Header() {
         alt="forever liss baby"
         styleContent="flex m-2 desktop:w-40 phone:w-20 ml-4 mt-4"
       />
-
+      <div>
       <Input
         type="text"
         name="filter"
         pleaceholder="Qual o mimo de hoje para o seu anjinho?"
         disabled={ false }
         style="p-3 self-center flex desktop:w-128 desktop:h-12 phone:w-48 h-7"
-      />
+        />
+
+      <Button
+        type="button"
+        name="BUSCAR"
+        disabled={ false }
+        style=""
+        />
+      </div>
 
       <div className="justify-around flex mr-5 w-40">
       <Link 
