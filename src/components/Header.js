@@ -3,7 +3,7 @@ import Input from './Input';
 import Link from './Link';
 import logo from '../images/logo-forever-liss-baby.png';
 import profileIcon from '../images/profile-icon.jpg';
-import shoppingCar from '../images/shopping-car.png';
+import shoppingCart from '../images/shopping-cart.png';
 
 function Header() {
   return (
@@ -30,9 +30,17 @@ function Header() {
         alt="logo da conta"
         styleContent="w-11 bg-secondary-color self-center p-2 rounded-full"
       />
-      <Link />
+      
+      <Link 
+        link="/"
+        image={ shoppingCart }
+        alt="logo da conta"
+        styleContent="w-11 bg-secondary-color self-center p-2 rounded-full"
+      />
     </div>
   );
 }
 
 export default Header;
+
+// icon reference: https://www.iconsdb.com/
