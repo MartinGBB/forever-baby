@@ -5,7 +5,7 @@ import cover4 from '../images/cover-4.jpg';
 import cover5 from '../images/cover-5.jpg';
 import cover6 from '../images/cover-6.jpg';
 
-export const covers = [
+const covers = [
   {
     id: 1,
     name: "cover1",
@@ -38,3 +38,5 @@ export const covers = [
   },
 ]
 // Reference: https://www.shopify.com.br/burst/bebes
+
+export default covers;
