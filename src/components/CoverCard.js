@@ -1,5 +1,6 @@
 import React from 'react'
-import { covers } from '../data/covers';
+import { covers } from '../data/coverData';
+import Cover from './Cover';
 
 function CoverCard() {
   return (
@@ -7,7 +8,7 @@ function CoverCard() {
       {
         covers.map(({ id, img, name }) => {
           <div key={ id }>
-            <img src={ img } alt={ name } />
+            <Cover src={ img } alt={ name } />
           </div>
         })
       }
