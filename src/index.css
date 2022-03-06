@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.slick-prev::before, .slick-arrow::before {
+  padding: 1px;
+  background: rgb(0, 0, 0);
+  border-radius: 50%;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
