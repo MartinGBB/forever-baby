@@ -1,16 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 
-function Favorites({ favorites }) {
+function FavoritesList({ favorites }) {
   return (
     <div>
     </div>
   );
 }
 
-Favorites.propTypes = {
+FavoritesList.propTypes = {
   covers: PropTypes.arrayOf(PropTypes.object).isRequired,
 }
 
 
-export default Favorites;
+export default FavoritesList;
