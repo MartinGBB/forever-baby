@@ -3,6 +3,7 @@ import Input from './Input';
 import Link from './Link';
 import logo from '../images/logo-forever-liss-baby.png';
 import profileIcon from '../images/profile-icon.jpg';
+import shoppingCar from '../images/shopping-car.png';
 
 function Header() {
   return (
