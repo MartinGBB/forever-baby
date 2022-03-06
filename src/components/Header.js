@@ -16,35 +16,35 @@ function Header() {
         styleContent="flex m-2 desktop:w-40 phone:w-20 ml-4 mt-4"
       />
       <div>
-      <Input
-        type="text"
-        name="filter"
-        pleaceholder="Qual o mimo de hoje para o seu anjinho?"
-        disabled={ false }
-        style="p-3 self-center flex desktop:w-128 desktop:h-12 phone:w-48 h-7"
+        <Input
+          type="text"
+          name="filter"
+          pleaceholder="Qual o mimo de hoje para o seu anjinho?"
+          disabled={ false }
+          style="p-3 self-center flex desktop:w-128 desktop:h-12 phone:w-48 h-7"
         />
 
-      <Button
-        type="button"
-        name="BUSCAR"
-        disabled={ false }
-        style=""
+        <Button
+          type="button"
+          name="BUSCAR"
+          disabled={ false }
+          style=""
         />
       </div>
 
       <div className="justify-around flex mr-5 w-40">
-      <Link 
-        link="/"
-        image={ profileIcon }
-        alt="perfil"
-        styleContent="w-11 bg-secondary-color self-center p-2 rounded-full"
+        <Link 
+          link="/"
+          image={ profileIcon }
+          alt="perfil"
+          styleContent="w-11 bg-secondary-color self-center p-2 rounded-full"
         />
       
-      <Link 
-        link="/"
-        image={ shoppingCart }
-        alt="carrinho de compras"
-        styleContent="w-11 bg-secondary-color self-center p-2 rounded-full"
+        <Link 
+          link="/"
+          image={ shoppingCart }
+          alt="carrinho de compras"
+          styleContent="w-11 bg-secondary-color self-center p-2 rounded-full"
         />
       </div>
     </div>
