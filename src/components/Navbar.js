@@ -2,7 +2,7 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <nav>
+    <nav >
       <ul>
         <li>PERFUME INFANTIL</li>
         <li>SABONETES</li>
