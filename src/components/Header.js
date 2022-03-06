@@ -23,7 +23,7 @@ function Header() {
         style="p-3 self-center flex desktop:w-128 desktop:h-12 phone:w-48 h-7"
       />
 
-      <div className="justify-around flex m-5 w-40">
+      <div className="justify-around flex mr-5 w-40">
       <Link 
         link="/"
         image={ profileIcon }

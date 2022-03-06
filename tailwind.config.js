@@ -16,11 +16,7 @@ module.exports = {
     },
     screens: {
       'phone': '200px',
-      // => @media (min-width: 640px) { ... }
-
       'desktop': '768px',
-      // => @media (min-width: 768px) { ... }
-
     }
   },
   plugins: [],
