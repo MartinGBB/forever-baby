@@ -18,7 +18,7 @@ function CoverList({ covers }) {
       {
         covers.map(({ id, name, img }) => {
           return (
-          <img className="max-w-[98%] max-h-[40rem] bg-cover bg-center" key={ id } src={ img } alt={ name } />
+          <img className="max-w-[100%] max-h-[40rem] bg-cover bg-center" key={ id } src={ img } alt={ name } />
         )})
       }
       </Slider>
