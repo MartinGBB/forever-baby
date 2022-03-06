@@ -7,9 +7,9 @@ function FavoritesCard(props) {
     <div className="block justify-center w-72 bg-white m-2 h-96">
       <img className="w-72" src={ image } alt={ title } />
       <h4 className="">{ title }</h4>
-      <h5 className="">{ price }</h5>
+      <h5 className="text-tertiary-color">{ price }</h5>
       <div>
-      <p className="">{ classification }</p>
+      <img className=""src={ classification } alt="clasification" />
       </div>
     </div>
   );
@@ -18,7 +18,7 @@ function FavoritesCard(props) {
 FavoritesCard.propTypes = {
   title: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
-  classification: PropTypes.number.isRequired,
+  classification: PropTypes.string.isRequired,
   rating: PropTypes.number.isRequired,
   image: PropTypes.string.isRequired,
 };
