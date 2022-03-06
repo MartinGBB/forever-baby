@@ -21,7 +21,7 @@ function FavoritesList({ favorites }) {
 }
 
 FavoritesList.propTypes = {
-  covers: PropTypes.arrayOf(PropTypes.object).isRequired,
+  favorites: PropTypes.arrayOf(PropTypes.object).isRequired,
 }
 
 
