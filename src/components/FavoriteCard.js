@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function FavoritesCard(props) {
   const { image, title, price, classification } = props;
   return (
-    <div className="block p-5 bg-primary-color">
+    <div>
       <img className="" src={ image } alt={ title } />
       <h4 className="">{ title }</h4>
       <h5 className="">{ price }</h5>
