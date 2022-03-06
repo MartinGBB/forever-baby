@@ -6,11 +6,9 @@ function FavoritesCard(props) {
   return (
     <div className="block justify-center w-72 bg-white m-2 h-96">
       <img className="w-72" src={ image } alt={ title } />
-      <h4 className="">{ title }</h4>
-      <h5 className="text-tertiary-color">{ price }</h5>
-      <div>
-      <img className=""src={ classification } alt="clasification" />
-      </div>
+      <h4 className="p-1 mt-2">{ title }</h4>
+      <h5 className="mb-3 text-tertiary-color">{ price }</h5>
+      <img className="justify-center flex w-28 m-auto" src={ classification } alt="clasification" />
     </div>
   );
 }
