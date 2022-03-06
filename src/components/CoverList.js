@@ -13,12 +13,13 @@ function CoverList({ covers }) {
     slidesToScroll: 1
   };
   return (
-    <div className="">
+    <div>
       <Slider {...settings}>
       {
         covers.map(({ id, name, img }) => {
-          return <img className="" key={ id } src={ img } alt={ name } />
-        })
+          return (
+          <img className="max-w-[98%] max-h-[40rem] bg-cover bg-center" key={ id } src={ img } alt={ name } />
+        )})
       }
       </Slider>
     </div>
