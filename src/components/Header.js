@@ -50,7 +50,7 @@ function Header() {
           />
         </div>
       </div>
-      <Navbar />
+          <Navbar />
     </div>
   );
 }
