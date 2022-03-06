@@ -11,7 +11,7 @@ function Header() {
       <Link
         link="/"
         image={ logo }
-        alt="logo forever liss baby"
+        alt="forever liss baby"
         styleContent="flex m-2 desktop:w-40 phone:w-20 ml-4 mt-4"
       />
 
@@ -27,14 +27,14 @@ function Header() {
       <Link 
         link="/"
         image={ profileIcon }
-        alt="logo da conta"
+        alt="perfil"
         styleContent="w-11 bg-secondary-color self-center p-2 rounded-full"
       />
       
       <Link 
         link="/"
         image={ shoppingCart }
-        alt="logo da conta"
+        alt="carrinho de compras"
         styleContent="w-11 bg-secondary-color self-center p-2 rounded-full"
       />
     </div>
