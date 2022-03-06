@@ -1,8 +1,10 @@
+import bloks from "../images/bloks.jpg"
+
 const favorites = [
   {
     id: 1,
-    image: "",
-    title: "Product 1",
+    image: bloks,
+    title: "Bloques",
     price: "R$ 0.00",
     classification: "5"
   },
