@@ -16,8 +16,15 @@ function Newsletter() {
         type="email"
         name="email"
         placeholder="Digite aqui o seu melhor e-mail"
+        value={ email }
         onChange={ ({ target: value }) => setEmail(value) }
       />
+      <button
+        type="button"
+        onClick={ handleFetch }
+      >
+        CADASTRAR
+      </button>
     </div>
   );
 }
