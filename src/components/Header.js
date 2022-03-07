@@ -31,20 +31,20 @@ function Header() {
           alt="forever liss baby"
           styleContent="flex m-2 desktop:w-40 phone:w-20 ml-4 mt-4"
         />
-        <div className="flex self-center desktop:w-128 desktop:h-12 phone:w-48 h-7">
+        <div className="phone:hidden desktop:flex self-center">
           <Input
             type="text"
             name="filter"
             pleaceholder="Qual o mimo de hoje para o seu anjinho?"
             disabled={ false }
-            style="p-3 self-center flex desktop:w-128 desktop:h-12 phone:w-20 h-7"
+            style="p-3 self-center flex w-128 h-12"
           />
 
           <Button
             type="button"
             name="BUSCAR"
             disabled={ false }
-            style="bg-white p-3 phone: p-0 w-20"
+            style="bg-white p-3"
           />
         </div>
 
@@ -77,6 +77,23 @@ function Header() {
             styleContent="bg-secondary-color text-white"
             styleUl="desktop:flex desktop:justify-between p-6 phone:hidden"
           />
+
+      <div className="m-auto flex desktop:hidden">
+        <Input
+          type="text"
+          name="filter"
+          pleaceholder="Qual o mimo de hoje para o seu anjinho?"
+          disabled={ false }
+          style="p-3 self-center w-128 flex ml-2 h-12"
+        />
+
+        <Button
+          type="button"
+          name="BUSCAR"
+          disabled={ false }
+          style="bg-white p-2 w-15 m-auto"
+        />
+      </div>
     </div>
   );
 }
