@@ -49,7 +49,10 @@ function Header() {
           />
         </div>
       </div>
-          <Navbar />
+          <Navbar
+            styleContent="bg-secondary-color text-white"
+            styleUl="desktop:flex desktop:justify-between p-6 phone:justify-start"
+          />
     </div>
   );
 }

@@ -1,18 +1,24 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-function Navbar() {
+function Navbar({ styleContent, styleUl }) {
   return (
-    <nav className="bg-secondary-color text-white">
-      <ul className="desktop:flex desktop:justify-between p-6 phone:justify-start">
-        <li className="hover:underline"><a href="">PERFUME INFANTIL</a></li>
-        <li className="hover:underline"><a href="">SABONETES</a></li>
-        <li className="hover:underline"><a href="">PÓS-BANHO</a></li>
-        <li className="hover:underline"><a href="">ASSADURAS</a></li>
-        <li className="hover:underline"><a href="">HIDRATANTES</a></li>
-        <li className="hover:underline"><a href="">LENÇOS UMEDECIDOS</a></li>
+    <nav className={ styleContent }>
+      <ul className={ styleUl }>
+        <li className="hover:underline"><a href="/">PERFUME INFANTIL</a></li>
+        <li className="hover:underline"><a href="/">SABONETES</a></li>
+        <li className="hover:underline"><a href="/">PÓS-BANHO</a></li>
+        <li className="hover:underline"><a href="/">ASSADURAS</a></li>
+        <li className="hover:underline"><a href="/">HIDRATANTES</a></li>
+        <li className="hover:underline"><a href="/">LENÇOS UMEDECIDOS</a></li>
       </ul>
     </nav>
   );
+}
+
+Navbar.propTypes = {
+  styleContent: PropTypes.string.isRequired,
+  styleUl: PropTypes.string.isRequired,
 }
 
 export default Navbar;
