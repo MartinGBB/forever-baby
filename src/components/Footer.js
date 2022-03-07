@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Navbar from './Navbar';
+import paymentMethod from "../images/paymentMethod.png";
 
 function Footer({ contact }) {
   return (
-    <div className="inline m-auto">
-      <h1 className="mt-8">VISITE NOSSAS REDES SOCIAIS</h1>
+    <div className="bg-[#F1F1F1]">
+      <h1 className="p-8">VISITE NOSSAS REDES SOCIAIS</h1>
       {
         contact.map(({ id, image, name, link}) => {
           return (
@@ -24,13 +25,16 @@ function Footer({ contact }) {
         styleContent="p-2 w-auto m-auto mt-5 mb-5"
         styleUl="flex m-8 justify-around flex-wrap"
       />
+      <div className="mb-5">
+        <h1>FORMAR DE PAGAMENTO</h1>
+        <img className="m-auto" src={ paymentMethod } alt="Forma de pagamento"/>
+      </div>
     </div>
   );
 }
 
 Footer.propTypes = {
   contact: PropTypes.arrayOf(PropTypes.object).isRequired,
-
 }
 
 export default Footer;
