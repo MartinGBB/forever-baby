@@ -4,6 +4,7 @@ import Link from './Link';
 import logo from '../images/logo-forever-liss-baby.png';
 import profileIcon from '../images/profile-icon.jpg';
 import shoppingCart from '../images/shopping-cart.png';
+import menu from '../images/menu.png';
 import Button from './Button';
 import Navbar from './Navbar';
 
@@ -14,7 +15,6 @@ function Header() {
   const handleHidden = () => {
     hidden === 'hidden' ? setHidden("none") : setHidden('hidden');
   }
-  handleHidden
   return (
     <div>
       <div className="flex self-center justify-between bg-primary-color">
@@ -23,7 +23,7 @@ function Header() {
           className="desktop:hidden ml-2"
           onClick={ handleHidden }
         >
-        menu
+        <img src={ menu } />
       </button>
         <Link
           link="/"
