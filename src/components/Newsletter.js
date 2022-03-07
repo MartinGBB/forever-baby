@@ -7,7 +7,8 @@ function Newsletter() {
   const handleFetch = async () => {
   const endpoind = "https://foreverliss1.websiteseguro.com/teste-dev/newsletter.php"
   const method = "POST";
-  return fetchApi(endpoind, method, { email });
+  const response = fetchApi(endpoind, method, { email });
+  return response;
   }
 
   return (

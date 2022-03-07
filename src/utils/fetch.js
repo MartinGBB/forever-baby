@@ -15,7 +15,6 @@ const fetchApi = async (url, method, data) => {
   try {
     const result = await fetch(url, config);
     const resultMessage = await result.json();
-    console.log(resultMessage)
     return resultMessage;
   } catch (error) {
     return error;
