@@ -3,15 +3,18 @@ import PropTypes from 'prop-types';
 
 function Footer({ contact }) {
   return (
-    <div>
+    <div className="inline m-auto">
       {
         contact.map(({ id, image, name, link}) => {
           return (
-            <div key={ id }>
-              <a href={ link }>
-                <img src={ image } alt={ name }/>
-              </a>
-            </div>
+            <a
+              key={ id }
+              href={ link }
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img className="inline m-auto" src={ image } alt={ name }/>
+            </a>
           )
         })
       }
