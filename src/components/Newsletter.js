@@ -38,7 +38,7 @@ function Newsletter() {
         >
           CADASTRAR
         </button>
-        <p>{ res }</p>
+        <p className="text-white">{ res }</p>
       </div>
     </div>
   );
