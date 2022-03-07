@@ -16,7 +16,8 @@ function Newsletter() {
   const timeout = () => {
     if (res !== "") return setRes("");
   };
-  setTimeout(timeout, 3000);
+  const threeSeconds = 3000;
+  setTimeout(timeout, threeSeconds);
 
   return (
   <div>
