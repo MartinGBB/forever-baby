@@ -31,7 +31,7 @@ function Footer({ contact }) {
         <img className="m-auto pb-2" src={ paymentMethod } alt="Forma de pagamento"/>
       </div>
     </div>
-          <div className="bg-white w-auto m-2 pl-36 pr-36 mb-8">
+          <div className="bg-white w-auto m-2 desktop:pl-36 desktop:pr-36 phone:p-1 mb-8 text-[#AAAAAA]">
           <span >
             <p>2022 www.foreverliss.com.br</p>
             <p>Todos os direitos reservados.</p>
