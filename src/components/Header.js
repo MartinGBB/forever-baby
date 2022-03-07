@@ -18,19 +18,21 @@ function Header() {
   return (
     <div>
       <div className="flex self-center justify-between bg-primary-color">
+        <div className="flex mr-2 ml-1">
         <button
           type="button"
           className="desktop:hidden ml-2"
           onClick={ handleHidden }
         >
-        <img src={ menu } />
-      </button>
+          <img src={ menu } />
+        </button>
         <Link
           link="/"
           image={ logo }
           alt="forever liss baby"
           styleContent="flex m-2 desktop:w-40 phone:w-20 ml-4 mt-4"
         />
+        </div>
         <div className="phone:hidden desktop:flex self-center">
           <Input
             type="text"
