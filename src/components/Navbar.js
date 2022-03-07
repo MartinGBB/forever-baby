@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Navbar() {
+function Navbar({ style }) {
   return (
-    <nav className="bg-secondary-color text-white">
+    <nav className={ style }>
       <ul className="desktop:flex desktop:justify-between p-6 phone:justify-start">
         <li className="hover:underline"><a href="/">PERFUME INFANTIL</a></li>
         <li className="hover:underline"><a href="/">SABONETES</a></li>

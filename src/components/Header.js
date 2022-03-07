@@ -49,7 +49,7 @@ function Header() {
           />
         </div>
       </div>
-          <Navbar />
+          <Navbar style="bg-secondary-color text-white" />
     </div>
   );
 }

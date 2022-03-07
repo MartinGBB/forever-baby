@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Navbar from './Navbar';
 
 function Footer({ contact }) {
   return (
@@ -18,6 +19,7 @@ function Footer({ contact }) {
           )
         })
       }
+      <Navbar />
     </div>
   );
 }
