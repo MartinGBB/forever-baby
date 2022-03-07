@@ -19,7 +19,10 @@ function Footer({ contact }) {
           )
         })
       }
-      <Navbar />
+      <Navbar
+        styleContent="p-2 w-4/5 m-auto mt-5 mb-5"
+        styleUl=" flex m-auto justify-around"
+      />
     </div>
   );
 }
