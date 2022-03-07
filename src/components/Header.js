@@ -30,7 +30,7 @@ function Header() {
             type="button"
             name="BUSCAR"
             disabled={ false }
-            style="bg-white p-3 phone: p-0 w-20 phone:text-[11px] "
+            style="bg-white p-3 phone: p-0 w-20"
           />
         </div>
 
