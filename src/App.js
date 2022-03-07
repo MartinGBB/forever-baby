@@ -16,7 +16,7 @@ function App() {
       <CoverList covers={ covers }/>
       <FavoritesList favorites={ favorites } />
       <Newsletter />
-      ,Footer />
+      <Footer />
     </div>
   );
 }
