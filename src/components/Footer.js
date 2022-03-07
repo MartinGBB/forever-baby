@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 function Footer({ contact }) {
   return (
     <div className="inline m-auto">
-      <h1>VISITE NOSSAS REDES SOCIAIS</h1>
+      <h1 className="mt-8">VISITE NOSSAS REDES SOCIAIS</h1>
       {
         contact.map(({ id, image, name, link}) => {
           return (
