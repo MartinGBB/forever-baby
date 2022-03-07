@@ -24,7 +24,7 @@ function Footer({ contact }) {
       }
       <Navbar
         styleContent="p-2 w-auto m-auto mt-5 mb-5"
-        styleUl="flex m-8 justify-around flex-wrap text-quaternary-color"
+        styleUl="flex justify-around flex-wrap text-quaternary-color"
       />
       <div className="mb-5">
         <h1 className="text-quaternary-color">FORMAR DE PAGAMENTO</h1>
