@@ -5,50 +5,66 @@ import urso from "../images/urso.jpg";
 import dooks from "../images/dooks.jpg";
 import cars from "../images/cars.jpg";
 import clothing from "../images/clothing.jpg";
+import mesa from "../images/mesa.webp";
 
 const favorites = [
   {
     id: 1,
     image: bloks,
     title: "Bloques",
-    price: "R$ 0.00",
+    price: "R$ 99.00",
     classification: starts
   },
   {
     id: 2,
     image: shampoo,
     title: "Champú",
-    price: "R$ 0.00",
+    price: "R$ 15.41",
     classification: starts
   },
   {
     id: 3,
     image: urso,
     title: "Urso",
-    price: "R$ 0.00",
+    price: "R$ 53.28",
     classification: starts
   },
   {
     id: 4,
     image: dooks,
     title: "Patos",
-    price: "R$ 0.00",
+    price: "R$ 19.20",
     classification: starts
   },
   {
     id: 5,
     image: cars,
-    title: "cars",
-    price: "R$ 0.00",
+    title: "Carrinho",
+    price: "R$ 98.55",
     classification: starts
   },
   {
     id: 6,
     image: clothing,
     title: "Roupinha",
-    price: "R$ 0.00",
+    price: "R$ 32.00",
     classification: starts
   },
+  {
+    id: 7,
+    image: mesa,
+    title: "Mesa",
+    price: "R$ 21.00",
+    classification: starts
+  },
+  {
+    id: 8,
+    image: dooks,
+    title: "Patos",
+    price: "R$ 41.99",
+    classification: starts
+  },
+
 ]
 
 export default favorites;
