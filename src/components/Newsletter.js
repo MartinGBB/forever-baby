@@ -20,7 +20,9 @@ function Newsletter() {
   setTimeout(timeout, threeSeconds);
 
   return (
-  <div className="bg-secondary-color justify-center align-center p-5">
+  <div className="bg-secondary-color justify-center align-center pb-9 pt-9">
+    <h1 className="text-white">NEWSLETTER FOREVER BABY</h1>
+    <p className="text-white mb-8">Cadastre-se agora para não perder nenhuma promoção</p>
     <div className="p-auto h-50 inline">
         <input
           name="email"
