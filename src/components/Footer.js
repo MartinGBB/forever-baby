@@ -27,7 +27,7 @@ function Footer({ contact }) {
       />
       <div className="mb-5">
         <h1>FORMAR DE PAGAMENTO</h1>
-        <img className="m-auto" src={ paymentMethod } alt="Forma de pagamento"/>
+        <img className="m-auto pb-2" src={ paymentMethod } alt="Forma de pagamento"/>
       </div>
     </div>
   );
