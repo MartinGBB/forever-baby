@@ -7,7 +7,7 @@ function Footer({ contact }) {
   return (
     <div>
     <div className="bg-[#F1F1F1]">
-      <h1 className="p-8 text-quaternary-color">VISITE NOSSAS REDES SOCIAIS</h1>
+      <h1 className="pt-8 text-quaternary-color">VISITE NOSSAS REDES SOCIAIS</h1>
       {
         contact.map(({ id, image, name, link}) => {
           return (
