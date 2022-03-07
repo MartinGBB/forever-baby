@@ -63,7 +63,7 @@ function Header() {
           />
         </div>
       </div>
-        <nav className={ `${ hidden } z-10 fixed text-white` }>
+        <nav className={ `${ hidden } z-10 absolute text-white` }>
           <ul className="bg-secondary-color text-left p-4 rounded-br-lg">
             <li className="hover:underline"><a href="/">PERFUME INFANTIL</a></li>
             <li className="hover:underline"><a href="/">SABONETES</a></li>
