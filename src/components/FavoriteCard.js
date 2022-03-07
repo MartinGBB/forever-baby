@@ -6,8 +6,8 @@ function FavoritesCard(props) {
   const { image, title, price, classification } = props;
   return (
     <div className="block justify-center w-72 bg-white m-2 h-96 border-b-4 border-b-secondary-color">
-      <img className="w-72 h-15" src={ image } alt={ title } />
-      <h4 className="p-1 mt-2">{ title }</h4>
+      <a href="/"><img className="w-72 h-15" src={ image } alt={ title } /></a>
+      <a href="/"><h4 className="p-1 mt-2">{ title }</h4></a>
       <h5 className="mb-3 text-tertiary-color">{ price }</h5>
       <img className="justify-center flex w-28 m-auto" src={ classification } alt="clasification" />
       <Button
