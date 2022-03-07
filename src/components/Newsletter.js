@@ -20,22 +20,24 @@ function Newsletter() {
   setTimeout(timeout, threeSeconds);
 
   return (
-  <div>
-      <input
-        name="email"
-        placeholder="Digite aqui o seu melhor e-mail"
-        value={ email }
-        className="p-3 m-auto self-center inline desktop:w-128 desktop:h-12 phone:w-20 h-7"
-        onChange={ ({ target: { value } }) => setEmail(value) }
-        />
-      <button
-        type="button"
-        className="bg-white m-auto inline phone: p-3 w-20"
-        onClick={ handleFetch }
-      >
-        CADASTRAR
-      </button>
-      <p>{ res }</p>
+  <div className="bg-secondary-color justify-center align-center p-5">
+    <div className="p-auto h-50 inline">
+        <input
+          name="email"
+          placeholder="Digite aqui o seu melhor e-mail"
+          value={ email }
+          className="p-3 w-128 inline"
+          onChange={ ({ target: { value } }) => setEmail(value) }
+          />
+        <button
+          type="button"
+          className="bg-white p-3 inline"
+          onClick={ handleFetch }
+        >
+          CADASTRAR
+        </button>
+        <p>{ res }</p>
+      </div>
     </div>
   );
 }
