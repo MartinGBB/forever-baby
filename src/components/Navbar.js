@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-function Navbar({ style }) {
+function Navbar({ styleContent, styleUl }) {
   return (
-    <nav className={ style }>
-      <ul className="desktop:flex desktop:justify-between p-6 phone:justify-start">
+    <nav className={ styleContent }>
+      <ul className={ styleUl }>
         <li className="hover:underline"><a href="/">PERFUME INFANTIL</a></li>
         <li className="hover:underline"><a href="/">SABONETES</a></li>
         <li className="hover:underline"><a href="/">PÓS-BANHO</a></li>
@@ -13,6 +14,11 @@ function Navbar({ style }) {
       </ul>
     </nav>
   );
+}
+
+Navbar.propTypes = {
+  styleContent: PropTypes.string.isRequired,
+  styleUl: PropTypes.string.isRequired,
 }
 
 export default Navbar;
