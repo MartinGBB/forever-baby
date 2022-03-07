@@ -26,12 +26,12 @@ function Newsletter() {
           name="email"
           placeholder="Digite aqui o seu melhor e-mail"
           value={ email }
-          className="p-3 w-128 inline"
+          className="p-3 desktop:w-128 inline phone:w-auto"
           onChange={ ({ target: { value } }) => setEmail(value) }
           />
         <button
           type="button"
-          className="bg-white p-3 inline"
+          className="bg-white p-3 inline desktop:p-3 phone:p-3"
           onClick={ handleFetch }
         >
           CADASTRAR
