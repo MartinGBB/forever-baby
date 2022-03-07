@@ -3,6 +3,7 @@ import './App.css';
 import CoverList from './components/CoverList';
 import FavoritesList from './components/FavoritesList';
 import Header from './components/Header';
+import Newsletter from './components/Newsletter';
 import covers from './data/coverData';
 import favorites from './data/favoritesData';
 
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <CoverList covers={ covers }/>
       <FavoritesList favorites={ favorites } />
+      <Newsletter />
     </div>
   );
 }
