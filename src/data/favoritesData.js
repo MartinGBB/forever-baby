@@ -3,9 +3,10 @@ import bloks from "../images/bloks.jpg";
 import shampoo from "../images/shampoo.jpg";
 import urso from "../images/urso.jpg";
 import dooks from "../images/dooks.jpg";
-import cars from "../images/cars.jpg";
+import chapeu from "../images/sombrero.jpg";
 import clothing from "../images/clothing.jpg";
-import mesa from "../images/mesa.webp";
+import mesa from "../images/mesa.jpg";
+import home from "../images/home.jpg";
 
 const favorites = [
   {
@@ -38,8 +39,8 @@ const favorites = [
   },
   {
     id: 5,
-    image: cars,
-    title: "Carrinho",
+    image: chapeu,
+    title: "Chapeú",
     price: "R$ 98.55",
     classification: starts
   },
@@ -59,8 +60,8 @@ const favorites = [
   },
   {
     id: 8,
-    image: dooks,
-    title: "Patos",
+    image: home,
+    title: "Casinha",
     price: "R$ 41.99",
     classification: starts
   },
