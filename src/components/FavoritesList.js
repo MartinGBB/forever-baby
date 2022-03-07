@@ -7,7 +7,7 @@ function FavoritesList({ favorites }) {
     <div className="p-5 bg-primary-color">
       <h1 className="p-5 mt-5 text-white">
         FOREVER BABY
-        <span className="text-blue-900 underline underline-offset-21"> DESTAQUES</span>
+        <span className="text-quaternary-color underline underline-offset-1 decoration-4 decoration-secondary-color"> DESTAQUES</span>
       </h1>
       <div className="flex flex-wrap justify-center">
       {
