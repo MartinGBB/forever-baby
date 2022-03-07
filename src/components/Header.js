@@ -9,24 +9,22 @@ import Navbar from './Navbar';
 
 function Header() {
 
-  const [hidden, setHidden] = useState(true);
+  const [hidden, setHidden] = useState('hidden');
+
   const handleHidden = () => {
-    hidden, setHidden
+    hidden === 'hidden' ? setHidden("none") : setHidden('hidden');
   }
   handleHidden
   return (
     <div>
       <div className="flex self-center justify-between bg-primary-color">
-      <nav className="desktop:hidden">
-        <ul>
-          <li className="hover:underline"><a href="/">PERFUME INFANTIL</a></li>
-          <li className="hover:underline"><a href="/">SABONETES</a></li>
-          <li className="hover:underline"><a href="/">PÓS-BANHO</a></li>
-          <li className="hover:underline"><a href="/">ASSADURAS</a></li>
-          <li className="hover:underline"><a href="/">HIDRATANTES</a></li>
-          <li className="hover:underline"><a href="/">LENÇOS UMEDECIDOS</a></li>
-        </ul>
-    </nav>
+        <button
+          type="button"
+          className="desktop:hidden ml-2"
+          onClick={ handleHidden }
+        >
+        menu
+      </button>
         <Link
           link="/"
           image={ logo }
@@ -65,6 +63,16 @@ function Header() {
           />
         </div>
       </div>
+        <nav className={ `${ hidden } z-10 fixed` }>
+          <ul className='z-10'>
+            <li className="hover:underline"><a href="/">PERFUME INFANTIL</a></li>
+            <li className="hover:underline"><a href="/">SABONETES</a></li>
+            <li className="hover:underline"><a href="/">PÓS-BANHO</a></li>
+            <li className="hover:underline"><a href="/">ASSADURAS</a></li>
+            <li className="hover:underline"><a href="/">HIDRATANTES</a></li>
+            <li className="hover:underline"><a href="/">LENÇOS UMEDECIDOS</a></li>
+          </ul>
+      </nav>
           <Navbar
             styleContent="bg-secondary-color text-white"
             styleUl="desktop:flex desktop:justify-between p-6 phone:hidden"
