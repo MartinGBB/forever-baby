@@ -10,6 +10,7 @@ function Newsletter() {
   const method = "POST";
   const request = await fetchApi(endpoind, method, { email });
   const response = request.Mensagem ? setRes(request.Mensagem) : setRes(request.Erro);
+  if ((request.Mensagem.includes("sucesso"))) return setEmail("");
   return response;
 };
 
