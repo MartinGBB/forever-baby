@@ -50,18 +50,18 @@ function Header() {
           />
         </div>
 
-        <div className="justify-around flex mr-5 w-40">
+        <div className="justify-around flex w-32">
           <Link 
             link="/"
             image={ profileIcon }
             alt="perfil"
-            styleContent="w-11 bg-secondary-color self-center p-2 rounded-full"
+            styleContent="w-10 bg-secondary-color self-center p-2 rounded-full"
           />
           <Link 
             link="/"
             image={ shoppingCart }
             alt="carrinho de compras"
-            styleContent="w-11 bg-secondary-color self-center p-2 rounded-full"
+            styleContent="w-10 bg-secondary-color self-center p-2 rounded-full"
           />
         </div>
       </div>
