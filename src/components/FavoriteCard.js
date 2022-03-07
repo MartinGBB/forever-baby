@@ -24,7 +24,6 @@ FavoritesCard.propTypes = {
   title: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
   classification: PropTypes.string.isRequired,
-  rating: PropTypes.number.isRequired,
   image: PropTypes.string.isRequired,
 };
 
