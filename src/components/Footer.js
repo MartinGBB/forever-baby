@@ -6,7 +6,7 @@ import paymentMethod from "../images/paymentMethod.png";
 function Footer({ contact }) {
   return (
     <div className="bg-[#F1F1F1]">
-      <h1 className="p-8">VISITE NOSSAS REDES SOCIAIS</h1>
+      <h1 className="p-8 text-quaternary-color">VISITE NOSSAS REDES SOCIAIS</h1>
       {
         contact.map(({ id, image, name, link}) => {
           return (
@@ -23,10 +23,10 @@ function Footer({ contact }) {
       }
       <Navbar
         styleContent="p-2 w-auto m-auto mt-5 mb-5"
-        styleUl="flex m-8 justify-around flex-wrap"
+        styleUl="flex m-8 justify-around flex-wrap text-quaternary-color"
       />
       <div className="mb-5">
-        <h1>FORMAR DE PAGAMENTO</h1>
+        <h1 className="text-quaternary-color">FORMAR DE PAGAMENTO</h1>
         <img className="m-auto pb-2" src={ paymentMethod } alt="Forma de pagamento"/>
       </div>
     </div>
