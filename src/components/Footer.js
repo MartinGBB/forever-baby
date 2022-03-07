@@ -13,7 +13,7 @@ function Footer({ contact }) {
               target="_blank"
               rel="noreferrer"
             >
-              <img className="inline m-auto" src={ image } alt={ name }/>
+              <img className="inline m-auto p-1" src={ image } alt={ name }/>
             </a>
           )
         })
