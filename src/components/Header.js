@@ -41,7 +41,6 @@ function Header() {
             alt="perfil"
             styleContent="w-11 bg-secondary-color self-center p-2 rounded-full"
           />
-        
           <Link 
             link="/"
             image={ shoppingCart }

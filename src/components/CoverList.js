@@ -7,8 +7,10 @@ import PropTypes from 'prop-types';
 function CoverList({ covers }) {
   const settings = {
     dots: true,
+    autoplay: true,
+    autoplaySpeed: 3300,
     infinite: true,
-    speed: 500,
+    speed: 900,
     slidesToShow: 1,
     slidesToScroll: 1
   };
@@ -18,7 +20,12 @@ function CoverList({ covers }) {
       {
         covers.map(({ id, name, img }) => {
           return (
-          <img className="max-w-[100%] max-h-[40rem] bg-cover bg-center" key={ id } src={ img } alt={ name } />
+          <img
+            className="max-w-[100%] max-h-[40rem] bg-cover bg-center"
+            key={ id }
+            src={ img }
+            alt={ name }
+          />
         )})
       }
       </Slider>

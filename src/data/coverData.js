@@ -36,7 +36,7 @@ const covers = [
     name: "cover6",
     img: cover6,
   },
-]
-// Reference: https://www.shopify.com.br/burst/bebes
+];
+// Reference images: https://www.shopify.com.br/burst/bebes
 
 export default covers;
