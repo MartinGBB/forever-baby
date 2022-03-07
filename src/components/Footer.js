@@ -5,6 +5,7 @@ import Navbar from './Navbar';
 function Footer({ contact }) {
   return (
     <div className="inline m-auto">
+      <h1>VISITE NOSSAS REDES SOCIAIS</h1>
       {
         contact.map(({ id, image, name, link}) => {
           return (
@@ -14,7 +15,7 @@ function Footer({ contact }) {
               target="_blank"
               rel="noreferrer"
             >
-              <img className="inline m-auto p-1" src={ image } alt={ name }/>
+              <img className="inline m-auto mt-3 p-1" src={ image } alt={ name }/>
             </a>
           )
         })
