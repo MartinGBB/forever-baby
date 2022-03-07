@@ -13,7 +13,6 @@ module.exports = {
       spacing: {
         '128': '41rem',
       }
-
     },
     screens: {
       'phone': '200px',

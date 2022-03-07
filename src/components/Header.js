@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Input from './Input';
 import Link from './Link';
 import logo from '../images/logo-forever-liss-baby.png';
@@ -8,9 +8,25 @@ import Button from './Button';
 import Navbar from './Navbar';
 
 function Header() {
+
+  const [hidden, setHidden] = useState(true);
+  const handleHidden = () => {
+    hidden, setHidden
+  }
+  handleHidden
   return (
     <div>
       <div className="flex self-center justify-between bg-primary-color">
+      <nav className="desktop:hidden">
+        <ul>
+          <li className="hover:underline"><a href="/">PERFUME INFANTIL</a></li>
+          <li className="hover:underline"><a href="/">SABONETES</a></li>
+          <li className="hover:underline"><a href="/">PÓS-BANHO</a></li>
+          <li className="hover:underline"><a href="/">ASSADURAS</a></li>
+          <li className="hover:underline"><a href="/">HIDRATANTES</a></li>
+          <li className="hover:underline"><a href="/">LENÇOS UMEDECIDOS</a></li>
+        </ul>
+    </nav>
         <Link
           link="/"
           image={ logo }
@@ -51,7 +67,7 @@ function Header() {
       </div>
           <Navbar
             styleContent="bg-secondary-color text-white"
-            styleUl="desktop:flex desktop:justify-between p-6 phone:justify-start"
+            styleUl="desktop:flex desktop:justify-between p-6 phone:hidden"
           />
     </div>
   );
