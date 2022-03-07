@@ -46,7 +46,7 @@ function Header() {
             type="button"
             name="BUSCAR"
             disabled={ false }
-            style="bg-white p-3"
+            style="bg-white p-3 text-quaternary-color"
           />
         </div>
 
@@ -93,7 +93,7 @@ function Header() {
           type="button"
           name="BUSCAR"
           disabled={ false }
-          style="bg-white p-2 w-15 m-auto"
+          style="bg-white p-2 w-15 m-auto text-quaternary-color"
         />
       </div>
     </div>
