@@ -9,20 +9,22 @@ import Navbar from './Navbar';
 function Header() {
 
   const [hidden, setHidden] = useState('hidden');
-  const [disable, setDisable] = useState(false);
+  const [disable, setDisable] = useState(true);
   const [valueInput, setValueInput] = useState('');
 
   const handleHidden = () => {
     hidden === 'hidden' ? setHidden("none") : setHidden('hidden');
   }
 
-  const handdleButton = () => {
+  const handdleInput = (value) => {
     // reference: https://pt.stackoverflow.com/questions/342605/verificar-a-exist%C3%AAncia-de-caracteres-especiais-em-uma-string-utilizando-regexp
     const regex = /\W|_/;
+    setValueInput(value)
     const testCharacter = regex.test(valueInput);
-    if (testCharacter || valueInput.length < 3) return setDisable(true);
+    if (testCharacter || value.length < 3) return setDisable(true);
     return setDisable(false);
   }
+
   return (
     <div>
       <div className="flex self-center justify-between bg-primary-color">
@@ -47,14 +49,13 @@ function Header() {
               name="filter"
               pleaceholder="Qual o mimo de hoje para o seu anjinho?"
               value={ valueInput }
-              onChange={ ({ target: { value } }) => setValueInput(value) }
+              onChange={ ({ target: { value } }) => handdleInput(value) }
               className="p-3 self-center flex w-128 h-12"
             />
 
             <button
               type="submit"
               disabled={ disable }
-              onClick={ handdleButton }
               className="bg-white p-3 text-quaternary-color"
             >
               BUSCAR
@@ -93,18 +94,17 @@ function Header() {
 
       <div className="m-auto flex desktop:hidden">
         <input
-          type="text"
-          name="filter"
-          pleaceholder="Qual o mimo de hoje para o seu anjinho?"
-          value={ valueInput }
-          onChange={ ({ target: { value } }) => setValueInput(value) }
-          className="p-3 self-center flex w-128 h-12"
-        />
+            type="text"
+            name="filter"
+            pleaceholder="Qual o mimo de hoje para o seu anjinho?"
+            value={ valueInput }
+            onChange={ ({ target: { value } }) => handdleInput(value) }
+            className="p-3 self-center flex w-128 h-12"
+          />
 
         <button
           type="submit"
           disabled={ disable }
-          onClick={ handdleButton }
           className="bg-white p-3 text-quaternary-color"
         >
           BUSCAR
