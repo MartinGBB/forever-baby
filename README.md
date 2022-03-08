@@ -7,6 +7,10 @@ Este projeto tem o objetivo de avaliar meus conhecimentos técnicos. A proposta 
 Nesste projeto foram repassados os conceitos de UX/UI, desenvolvimento de interface a partir de um protótipo de alta fidelidade e desenvolvimento de layout responsivo.
 Além disso foi feita a integração da API de Newsletter, esta se encarrega de cadastrar email num banco de dados e faz a verificação da mesma.
 
+## Tecnologias utilizadas no projeto
+- ReactJS
+- Tailwind CSS
+- Slick
 
 ## Como instalar
 ### Para iniciar o projeto deve seguir estos passos:
