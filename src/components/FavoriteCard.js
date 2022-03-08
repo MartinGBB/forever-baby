@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import shoppingCart from '../images/shopping-cart.png';
 import PropTypes from 'prop-types';
 
 function FavoritesCard(props) {
@@ -25,10 +26,11 @@ function FavoritesCard(props) {
       <img className="justify-center flex w-28 m-auto" src={ classification } alt="clasification" />
       <button
         type="button"
-        className="w-56 h-9 bg-[#FF8A00] text-white rounded-md mt-2"
+        className="w-64 h-11 flex p-2 m-auto bg-[#FF8A00] text-white rounded-md mt-2"
         onClick={ handdleBuys }
       >
-        Adicionar
+        <img className="m-auto" src={ shoppingCart } />
+        ADICIONAR AO CARRINHO
       </button>
     </div>
   );
