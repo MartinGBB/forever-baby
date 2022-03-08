@@ -7,3 +7,16 @@ Este projeto tem o objetivo de avaliar meus conhecimentos técnicos. A proposta 
 Nesste projeto foram repassados os conceitos de UX/UI, desenvolvimento de interface a partir de um protótipo de alta fidelidade e desenvolvimento de layout responsivo.
 Além disso foi feita a integração da API de Newsletter, esta se encarrega de cadastrar email num banco de dados e faz a verificação da mesma.
 
+
+## Como instalar
+### Para iniciar o projeto deve seguir estos passos:
+
+Copie ssh do projeto: `git@github.com:MartinGBB/forever-baby.git`
+
+Abra um terminal no seu computador e utilize os comandos a baixo na ordem que são apresentados:
+- Clone o repositorio: `git clone git@github.com:MartinGBB/forever-baby.git`
+ 
+- Entre na pasta do repositorio:
+ `cd forever-baby`
+- Instale as dependencias: `npm install`
+- Inicia a app: `npm start`
