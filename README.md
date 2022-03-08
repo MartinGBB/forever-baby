@@ -24,3 +24,9 @@ Abra um terminal no seu computador e utilize os comandos a baixo na ordem que s√
  `cd forever-baby`
 - Instale as dependencias: `npm install`
 - Inicia a app: `npm start`
+
+## Contato
+### Martin Braz√≥n
+Linkedin: https://www.linkedin.com/in/martinbrazon/ <br/>
+Github: https://github.com/MartinGBB/ToDoList <br/>
+Email: escorpmartin97@gmail.com
