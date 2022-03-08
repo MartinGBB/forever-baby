@@ -34,7 +34,7 @@ function Newsletter() {
           />
         <button
           type="button"
-          className="bg-white p-3 inline desktop:p-3 phone:p-3"
+          className="bg-white p-3 inline desktop:p-3 phone:p-3 text-quaternary-color"
           onClick={ handleFetch }
         >
           CADASTRAR

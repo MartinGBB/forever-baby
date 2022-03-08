@@ -1,20 +1,30 @@
 import React, { useState } from 'react'
-import Input from './Input';
 import Link from './Link';
 import logo from '../images/logo-forever-liss-baby.png';
 import profileIcon from '../images/profile-icon.jpg';
 import shoppingCart from '../images/shopping-cart.png';
 import menu from '../images/menu.png';
-import Button from './Button';
 import Navbar from './Navbar';
 
 function Header() {
 
   const [hidden, setHidden] = useState('hidden');
+  const [disable, setDisable] = useState(true);
+  const [valueInput, setValueInput] = useState('');
 
   const handleHidden = () => {
     hidden === 'hidden' ? setHidden("none") : setHidden('hidden');
   }
+
+  const handdleInput = (value) => {
+    // reference: https://pt.stackoverflow.com/questions/342605/verificar-a-exist%C3%AAncia-de-caracteres-especiais-em-uma-string-utilizando-regexp
+    const regex = /\W|_/;
+    setValueInput(value)
+    const testCharacter = regex.test(valueInput);
+    if (testCharacter || value.length < 3) return setDisable(true);
+    return setDisable(false);
+  }
+
   return (
     <div>
       <div className="flex self-center justify-between bg-primary-color">
@@ -34,20 +44,22 @@ function Header() {
         />
         </div>
         <div className="phone:hidden desktop:flex self-center">
-          <Input
-            type="text"
-            name="filter"
-            pleaceholder="Qual o mimo de hoje para o seu anjinho?"
-            disabled={ false }
-            style="p-3 self-center flex w-128 h-12"
-          />
+          <input
+              type="text"
+              name="filter"
+              pleaceholder="Qual o mimo de hoje para o seu anjinho?"
+              value={ valueInput }
+              onChange={ ({ target: { value } }) => handdleInput(value) }
+              className="p-3 self-center flex w-128 h-12"
+            />
 
-          <Button
-            type="button"
-            name="BUSCAR"
-            disabled={ false }
-            style="bg-white p-3"
-          />
+            <button
+              type="submit"
+              disabled={ disable }
+              className="bg-white p-3 text-quaternary-color"
+            >
+              BUSCAR
+            </button>
         </div>
 
         <div className="justify-around flex w-32">
@@ -81,20 +93,22 @@ function Header() {
           />
 
       <div className="m-auto flex desktop:hidden">
-        <Input
-          type="text"
-          name="filter"
-          pleaceholder="Qual o mimo de hoje para o seu anjinho?"
-          disabled={ false }
-          style="p-3 self-center w-128 flex ml-2 h-12"
-        />
+        <input
+            type="text"
+            name="filter"
+            pleaceholder="Qual o mimo de hoje para o seu anjinho?"
+            value={ valueInput }
+            onChange={ ({ target: { value } }) => handdleInput(value) }
+            className="p-3 self-center flex w-128 h-12"
+          />
 
-        <Button
-          type="button"
-          name="BUSCAR"
-          disabled={ false }
-          style="bg-white p-2 w-15 m-auto"
-        />
+        <button
+          type="submit"
+          disabled={ disable }
+          className="bg-white p-3 text-quaternary-color"
+        >
+          BUSCAR
+        </button>
       </div>
     </div>
   );
@@ -102,4 +116,4 @@ function Header() {
 
 export default Header;
 
-// icon reference: https://www.iconsdb.com/
+// icons reference: https://www.iconsdb.com/
